@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>search in javascript</title>
+  <a href="home.html">Home</a>
+  <a href="s.html">Services</a>
+  <a href="contact.html">Contact</a>
+  <a href="login.html">Login</a>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="s.css" />
+</head>
+<body>
+<div class="container-fluid">
+<div class="container">
+<div class="search">
+<h1>All Products</h1>
+<input type="text" name="" id="find" placeholder="search here...." onkeyup="search()">
+</div>
+<div class="product-list">
+  <div class="product">
+    <img src="w.jpg">
+    <a href="w.html"><h3>Wheat</h3></a>
+  </div>
+<div class="product">
+<img src="r.jpg">
+<a href="r.html"><h3>Rice</h3></a>
+</div>
+<div class="product">
+<img src="m.jpg">
+<a href="m.html"><h3>Massor Dal</h3></a>
+</div>
+<div class="product">
+<img src="ma.jpg">
+<a href="ma.html"><h3>Moong Dal</h3></a>
+</div>
+<div class="product">
+<img src="s.jpg">
+<a href="sa.html"><h3>Strawberry</h3></a>
+</div>
+<div class="product">
+<img src="g.jpg">
+<a href="g.html"><h3>Grapes</h3></a>
+</div>
+<div class="product">
+<img src="c.jpg">
+<a href="c.html"><h3>Carrot</h3></a>
+</div>
+<div class="product">
+  <img src="t.jpg">
+  <h3>Tomato</h3>
+  </div>
+</div>
+</div>
+</div>
+<!-- javascript -->
+<script type="text/javascript">
+function search() {
+let filter = document.getElementById('find').value.toUpperCase();
+let item = document.querySelectorAll('.product');
+let l = document.getElementsByTagName('h3');
+for(var i = 0;i<=l.length;i++){
+let a=item[i].getElementsByTagName('h3')[0];
+let value=a.innerHTML || a.innerText || a.textContent;
+if(value.toUpperCase().indexOf(filter) > -1) {
+item[i].style.display="";
+}
+else
+{
+item[i].style.display="none";
+}
+}
+}
+</script>
+</body>
+</html

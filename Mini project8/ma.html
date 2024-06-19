@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massor Daal</title>
+    <link rel="stylesheet" href="c.css" />
+</head>
+<body>
+  <nav class="navigation">
+    <a href="home.html">Home</a>
+    <a href="s.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <button class="btnLogin-popup" id="btn"></button>
+</nav>
+    <h2 class="crop">Massor Dal</h2>
+    <table class="centre">
+        <caption> Parameters requried</caption>
+        <thead>
+          <tr>
+            <th class="primary" scope="col">Parameters</th>
+            <th scope="col">Data</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Temperature</th>
+            <td> 20°C to 35°C </td>
+          </tr>
+          <tr>
+            <th scope="row">Soil moisture</th>
+            <td> moderate moisture levels </td>
+          </tr>
+          <tr>
+            <th scope="row">Humidity</th>
+            <td> 40% to 60% </td>
+          </tr>
+          <tr>
+            <th scope="row">Nutrition</th>
+            <td> Nitrogen, Phosphorus, and Potassium </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+          <img src="img/tick.png" alt="">
+          <h2>Thank You!</h2>
+          <p>Your Details has been Succesfully Submitted.Thanks!</p>
+          <button type="button" onclick="closePopup()">OK</button>
+        
+      
+      </div>
+      <script src="c.js"></script>
+</body>
+</html>

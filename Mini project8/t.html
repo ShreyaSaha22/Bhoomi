@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrot</title>
+    <link rel="stylesheet" href="c.css" />
+</head>
+<body>
+  <nav class="navigation">
+    <a href="home.html">Home</a>
+    <a href="s.html">Services</a>
+    <a href="contact.html">Contact</a>
+    <a href="login.html">Login</a>
+    <button class="btnLogin-popup" id="btn"></button>
+</nav>
+    <h2 class="crop">Carrot</h2>
+    <table class="centre">
+        <caption> Parameters requried</caption>
+        <thead>
+          <tr>
+            <th class="primary" scope="col">Parameters</th>
+            <th scope="col">Data</th>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Temperature</th>
+            <td> 21°C-24°C </td>
+          </tr>
+          <tr>
+            <th scope="row">Soil moisture</th>
+            <td> 60%-80% </td>
+          </tr>
+          <tr>
+            <th scope="row">Humidity</th>
+            <td> 60-85%RH </td>
+          </tr>
+          <tr>
+            <th scope="row">Nutrition</th>
+            <td > 120:80:80 kg of NPK per ha. </td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      
+        <button type="submit" class="btn" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+          <img src="img/tick.png" alt="">
+          <h2>Thank You!</h2>
+          <p>Your Details has been Succesfully Submitted.Thanks!</p>
+          <button type="button" onclick="closePopup()">OK</button>
+        
+      
+      </div>
+      <script src="c.js"></script>
+</body>
+</html>
